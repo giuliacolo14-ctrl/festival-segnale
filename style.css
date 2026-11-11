@@ -224,4 +224,117 @@ h3 {
   top: 1rem;
 }
 
+.venue-swiper {
+  overflow: hidden;
+}
 
+.venue-slide {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; /* Rimuove il padding attorno all'immagine */
+  background: #fff;
+  border-radius: 0.75rem; /* oppure il valore che hai scelto */
+  overflow: hidden; /* Fondamentale: ritaglia gli angoli superiori dell'immagine */
+}
+
+.venue-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 65vh;
+  object-fit: cover;
+  border-radius: 0; /* L'immagine non ha bisogno di raggio proprio, ci pensa overflow: hidden */
+}
+
+.venue-slide figcaption {
+  padding: 1.5rem; /* Ripristina lo spazio interno per il testo sottostante */
+}
+
+.venue-slide h3 {
+  margin: 0 0 0.5rem;
+}
+
+.gallery-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  min-height: 3rem;
+  margin-top: 1.5rem; /* Stacca i comandi dal riquadro sovrastante */
+}
+
+.gallery-controls .swiper-button-prev,
+.gallery-controls .swiper-button-next {
+  position: static;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin: 0;
+  color: inherit;
+}
+
+.gallery-controls .swiper-button-prev::after,
+.gallery-controls .swiper-button-next::after {
+  font-size: 1.25rem;
+}
+
+.gallery-controls .swiper-pagination {
+  position: static;
+  width: auto;
+}
+
+.map-frame {
+  width: 100%;
+  overflow: hidden;
+}
+
+.map-frame iframe {
+  display: block;
+  width: 100%;
+  height: 28rem;
+  border: 0;
+}
+
+.venue-addresses {
+  display: grid;
+  gap: 1rem;
+  padding-left: 1.25rem;
+}
+
+.venue-addresses li {
+  line-height: 1.6;
+}
+
+.swiper-button-prev:focus-visible,
+.swiper-button-next:focus-visible,
+a:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .map-frame iframe {
+    height: 22rem;
+  }
+
+  .venue-slide {
+    padding: 1rem;
+  }
+}
+
+.map-frame {
+  width: 100%;
+  overflow: hidden;
+}
+
+.map-frame iframe {
+  display: block;
+  width: 100%;
+  height: 28rem;
+  border: 0;
+}
+
+@media (max-width: 600px) {
+  .map-frame iframe {
+    height: 22rem;
+  }
+}
