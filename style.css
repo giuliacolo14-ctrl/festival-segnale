@@ -4,7 +4,7 @@
 /* Scelte comuni: ogni regola usa var() per richiamarne il valore. */
 :root {
   --colore-primario: #96a8fe;
-  --colore-primario-scuro: #677ff8;
+  --colore-primario-scuro: #ef6a3f;
   --colore-sfondo: #f5f2e9;
   --colore-testo: #010d48;
   --font-testo: Arial, Helvetica, sans-serif;
