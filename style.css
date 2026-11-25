@@ -365,3 +365,14 @@ a:focus-visible {
     height: 22rem;
   }
 }
+
+.weather-card {
+  padding: 1.5rem;
+  border: 1px solid #b7c0b7;
+  border-radius: 0.75rem;
+  background: #ffffff;
+}
+
+.weather-card p:last-child {
+  margin-bottom: 0;
+}
